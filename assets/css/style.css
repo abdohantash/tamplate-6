@@ -7289,9 +7289,7 @@ footer {
 }
 
 .go-top.active {
-    left: 1%;
-    -webkit-transform: translateY(-1%);
-    transform: translateY(-1%);
+    left: 10px;
     opacity: 1;
     visibility: visible
 }
@@ -7499,20 +7497,24 @@ footer {
     justify-content: space-between;
 }
 
+.navbar-brand {
+    margin: 0;
+}
+
 /* abdo */
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     body {
         font-size: 16px
     }
 
     .ptb-100 {
-        padding-top: 50px;
-        padding-bottom: 50px
+        padding-top: 30px;
+    padding-bottom: 30px;
     }
 
     .pt-100 {
-        padding-top: 50px
+        padding-top: 30px
     }
 
     .pb-70 {
@@ -7520,7 +7522,7 @@ footer {
     }
 
     .pb-100 {
-        padding-bottom: 50px
+        padding-bottom: 30px
     }
 
     .container-fluid {
@@ -7534,7 +7536,8 @@ footer {
 
     .header-top-area .container-fluid {
         padding-right: 15px;
-        padding-left: 15px
+        padding-left: 15px;
+        max-width: 100% !important;
     }
 
     .header-top-area .left p {
@@ -7542,7 +7545,10 @@ footer {
     }
 
     .header-top-area .right {
-        text-align: center
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     }
 
     .header-top-area .right .contact-info {
@@ -7563,9 +7569,9 @@ footer {
 
     .header-top-area .right .social-info {
         display: block;
-        top: 0;
+        top: 4px;
         margin-right: 0;
-        margin-top: 5px
+        margin-top: 0;
     }
 
     .side-nav ul {
@@ -7613,7 +7619,8 @@ footer {
     .banner-content p {
         font-size: 16px;
         margin-right: auto;
-        margin-left: auto
+        margin-left: auto;
+        margin-bottom: 15px;
     }
 
     .banner-content .banner-btn-area .banner-btn {
@@ -7624,10 +7631,6 @@ footer {
         margin-top: 10px
     }
 
-    .banner-content .banner-btn-area .common-btn {
-        width: 100%;
-        display: block
-    }
 
     .banner-content .banner-bg-text {
         font-size: 45px;
@@ -7749,17 +7752,18 @@ footer {
     }
 
     .counter-item {
-        text-align: center
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .counter-item h3 {
-        font-size: 60px;
+        font-size: 37px;
         position: relative;
-        line-height: 60px
+        align-items: center;
     }
 
     .counter-item p {
-        font-size: 16px;
+        font-size: 20px;
         padding-right: 0;
         top: 0
     }
@@ -8080,7 +8084,7 @@ footer {
     }
 
     .service-item-two .bottom {
-        padding: 40px 15px 30px
+        padding: 20px 15px
     }
 
     .pricing-area .section-title.two {
@@ -8262,12 +8266,14 @@ footer {
     }
 
     .blog-area-three .blog-item-three .bottom {
-        padding: 28px 10px 30px
+        padding: 15px 10px;
     }
 
     .blog-area-three .blog-item-three .bottom h3 {
-        margin-bottom: 12px;
-        font-size: 18px
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 27px;
     }
 
     .testimonials-area.three .owl-theme .owl-nav.disabled+.owl-dots {
@@ -8291,11 +8297,11 @@ footer {
     }
 
     .page-title-area {
-        height: 380px
+    padding-bottom: 10px;
     }
 
     .page-title-area .title-content {
-        margin-top: 105px
+        margin-top: 55px;
     }
 
     .page-title-area .title-content h2 {
@@ -8630,16 +8636,16 @@ footer {
     }
 
     .ptb-100 {
-        padding-top: 70px;
-        padding-bottom: 70px
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .pt-100 {
-        padding-top: 70px
+        padding-top: 40px;
     }
 
     .pb-70 {
-        padding-bottom: 40px
+        padding-bottom: 40px;
     }
 
     .pb-100 {
@@ -8678,21 +8684,19 @@ footer {
 
     .header-top-area .container-fluid {
         padding-right: 15px;
-        padding-left: 15px
+        padding-left: 15px;
+        max-width: 100% !important;
     }
 
     .header-top-area .left p {
-        margin-bottom: 10px
     }
 
     .header-top-area .right {
-        text-align: center
+    display: flex;
+    align-items: center;
     }
 
     .header-top-area .right .contact-info {
-        display: block;
-        border-left: 0;
-        padding-left: 0
     }
 
     .header-top-area .right .contact-info li {
@@ -8706,10 +8710,6 @@ footer {
     }
 
     .header-top-area .right .social-info {
-        display: block;
-        top: 0;
-        margin-right: 0;
-        margin-top: 5px
     }
 
     .side-nav {
@@ -8725,7 +8725,6 @@ footer {
     }
 
     .side-nav.two ul li:nth-child(1) {
-        top: -6px !important
     }
 
     .side-nav.two ul li:nth-child(2) {
@@ -8737,12 +8736,12 @@ footer {
     }
 
     .side-nav.two ul li .talk-item {
-        padding: 6px 0 0 !important;
-        height: 48px !important
     }
 
     .side-nav.two ul li .talk-item span {
-        font-size: 12px
+        font-size: 15px;
+        margin: 0;
+        color: #00235a;
     }
 
     .side-nav.two ul li .nav-srh .search-area {
@@ -8854,7 +8853,7 @@ footer {
         margin-left: auto;
         padding-left: 0;
         text-align: center;
-        margin-bottom: 30px
+        margin-bottom: 0;
     }
 
     .about-area .about-content .about-span {
@@ -8905,18 +8904,18 @@ footer {
     }
 
     .counter-item {
-        text-align: center
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .counter-item h3 {
-        font-size: 60px;
+        font-size: 42px;
         position: relative;
-        line-height: 60px;
-        margin-bottom: 5px
+        align-items: center;
     }
 
     .counter-item p {
-        font-size: 18px;
+        font-size: 21px;
         padding-right: 0;
         top: 0
     }
@@ -9068,7 +9067,7 @@ footer {
     }
 
     .about-area.two {
-        padding-bottom: 70px
+        padding: 40px 0;
     }
 
     .about-area.two .about-img.two {
@@ -9222,7 +9221,7 @@ footer {
     }
 
     .page-title-area .title-content {
-        margin-top: 40px
+        margin-top: 60px;
     }
 
     .about-area.two .about-img img:nth-child(2) {
@@ -9409,7 +9408,7 @@ footer {
     .main-nav nav .navbar-nav .nav-item a {
         margin-right: 8px;
         margin-left: 8px;
-        font-size: 15px
+        font-size: 17px;
     }
 
     .main-nav .container-fluid {
@@ -9488,7 +9487,8 @@ footer {
     }
 
     .side-nav.two ul li .talk-item {
-        padding: 15px 10px 10px 15px
+        padding: 10px;
+        height: 65px;
     }
 
     .side-nav.two ul li .talk-item i.two {
@@ -9557,20 +9557,21 @@ footer {
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:992px) {
     .mean-container .mean-bar {
-        background-color: #00245a
+        background-color: #ffffff;
     }
 
     .mobile-nav .logo {
-        top: 10px;
+        top: 14px;
         max-width: 105px
     }
 
     .mean-container a.meanmenu-reveal span {
         margin-top: 30px;
         position: relative;
-        top: -10px
+        top: -10px;
+        background: #00235a;
     }
 
     .mobile-nav.mean-container .mean-nav ul li a.active {
@@ -9578,8 +9579,8 @@ footer {
     }
 
     .navbar-nav {
-        height: 402px;
-        overflow-y: scroll
+        height: auto;
+    overflow-y: auto;
     }
 
     .mean-container .mean-nav ul li li a {
@@ -9603,9 +9604,6 @@ footer {
     }
 
     .side-nav ul li:nth-child(1) {
-        border-left: 1px solid #e8e8e8;
-        padding-left: 20px;
-        top: -7px
     }
 
     .side-nav ul li:nth-child(2) {
@@ -9656,8 +9654,6 @@ footer {
     }
 
     .side-nav.two ul li:nth-child(1) {
-        padding-left: 15px;
-        top: -9px
     }
 
     .side-nav.two ul li:nth-child(2) {
@@ -9667,7 +9663,12 @@ footer {
 
     .side-nav.two ul li .talk-item {
         padding: 10px 10px 4px;
-        height: 55px
+        height: auto;
+        background: unset;
+        box-sizing: border-box;
+        padding: 0;
+        top: 8px;
+        left: 50px;
     }
 
     .side-nav.two ul li .talk-item:before {
@@ -9684,7 +9685,7 @@ footer {
 
     .side-nav.two ul li .talk-item a {
         font-size: 17px;
-        color: #fff !important
+        color: #00235a !important;
     }
 
     .side-nav.two ul li .talk-item a:hover {
@@ -9793,4 +9794,288 @@ footer {
         left: 500px;
         max-width: 620px
     }
+}
+
+/* new */
+
+
+@media(max-width:1200px) {
+    .header-top-area .right .contact-info  li:first-child {
+        display: none;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        color: #00235a;
+        font-size: 26px !important;
+        line-height: 28px;
+    }
+
+    .mean-container .mean-nav ul li a {
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+
+    .mean-container .mean-nav ul li:first-child a {
+        border-top: 0;
+    }
+
+    .mean-container .mean-bar {
+        padding: 3px 0;
+    }
+
+    .about-area .about-content .section-title {
+        margin-bottom: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .about-area .about-img img:nth-child(2) {
+        display: none;
+    }
+
+    .about-area .about-img img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media(max-width:992px) {
+    .banner-item:before {
+        background: #00000069;
+    }
+
+    .navbar-nav ,.navbar-nav * {
+        box-sizing: border-box !important;
+    }
+
+    .mean-container .mean-nav ul li a {
+        width: 100%;
+    }
+
+    .section-title.two .sub-title {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .section-title.two .sub-title:before {
+        width: 30px;
+    }
+
+    .section-title .sub-title::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 1px;
+        top: 12px;
+        left: 0;
+        background-color: #f26522;
+        display: block !important;
+    }
+
+    .page-title-area .title-content h2 {
+        font-size: 20px;
+    }
+
+    .service-details-area, .project-page, .project-details-area, .blog-page, .blog-details-area {
+        padding: 40px 0;
+    }
+
+    .project-details-area .details-item .details-head h2 {
+        font-size: 21px;
+    }
+
+    .widget-area .widget-item h3 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+
+    .blog-details-area .details-item .details-head h2 {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:768px) {
+    .side-nav {
+        display: none;
+    }
+
+    .flex-head .left {
+        display: none;
+    }
+
+    .common-btn {
+        padding: 7px 20px;
+        font-size: 17px;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+        line-height: 36px;
+    }
+
+    .projects-item .bottom h3 {
+        font-size: 17px;
+        font-weight: normal;
+    }
+
+    .projects-area.two .projects-item .bottom {
+        padding: 12px 10px;
+        max-width: 90%;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
+
+    .copyright-area {
+        margin-top: 25px;
+    }
+
+    .counter-item h3 .target {
+        font-size: 37px;
+    }
+
+    .go-top {
+        width: 35px;
+        height: 35px;
+    }
+
+    .page-title-area .title-content h2 {
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    .page-title-area .title-content ul li {
+        font-size: 14px;
+    }
+
+    .page-title-area .title-content ul li i {
+        font-size: 16px;
+        top: 2px; 
+    }
+
+    .service-details-area, .project-page, .project-details-area, .blog-page, .blog-details-area {
+        padding: 30px 0;
+    }
+
+    .widget-area .post .post-inner ul li h4 {
+        font-size: 17px;
+        font-weight: normal;
+    }
+}
+
+@media(max-width:576px) {
+    .service-item-two .bottom h3 {
+        font-size: 19px;
+    }
+
+    .service-item-two .bottom .desc-ser {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .service-item-two .bottom .common-btn {
+        height: 36px;
+        padding: 0 15px;
+        line-height: 36px;
+    }
+
+    .service-item-two .bottom .common-btn i {
+        font-size: 22px;
+        top: 8px;
+        left: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+
+@media(max-width:450px) {
+    .header-top-area {
+        display: none;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .counter-item h3 {
+        font-size: 25px;
+    }
+
+    .counter-item {
+        gap: 10px;
+    }
+
+    .counter-item h3 .target {
+        font-size: 28px;
+    }
+
+    .counter-item p {
+        font-size: 18px;
+    }
+
+    .contact-info-item .bottom h3 {
+        font-size: 16px;
+    }
+
+    .help-area .help-item .form-group textarea.form-control {
+        height: 115px !important;
+    }
+
+    .help-area iframe {
+        height: 250px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:375px) {
+    .counter-area .row .col-6 {
+        width: 100%;
+    }
+    .counter-item p {
+        width: 130px;
+        text-align: right;
+    }   
+    
+    .counter-item h3 {
+        width: 55px;
+        justify-content: end;
+    }
+
+    .counter-item {
+        flex-direction: row-reverse;
+    }
+
+    .common-btn {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+
+    .common-btn i {
+        font-size: 16px;
+    }
+
+    .projects-area.two .section-title.two {
+        margin-bottom: 15px;
+    }
+
+    .projects-area.two .project-right-btn,.blog-area-three .blog-right-btn {
+        margin-bottom: 15px;
+    }
+
+    .footer-item .footer-logo span {
+        font-size: 16px;
+}
+
+.footer-item .footer-logo ul li a {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+}
+
 }
