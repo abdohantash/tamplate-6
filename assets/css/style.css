@@ -2329,7 +2329,7 @@ ul {
 }
 
 footer {
-    background-color: #00245a;
+    background-color: #ffffff;
     background-image: url(../img/footer-bg.png);
     background-size: cover;
     background-position: center center;
@@ -2359,7 +2359,7 @@ footer {
 .footer-item .footer-logo span {
     display: block;
     font-weight: 500;
-    color: #fff;
+    color: #00235a;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -2453,7 +2453,7 @@ footer {
 
 .copyright-area {
     padding: 10px 0;
-    border-top: 1px solid #1b437f;
+    border-top: 1px solid #879bbb;
     margin-top: 30px;
 }
 
@@ -2509,13 +2509,13 @@ footer {
 
 .copyright-area .copyright-item p {
     margin-bottom: 0;
-    color: #cadfff
+    color: #00235a;
 }
 
 .copyright-area .copyright-item p a {
     display: inline-block;
     font-weight: 500;
-    color: #fff;
+    color: #f26522;
 }
 
 .copyright-area .copyright-item p a:hover {
@@ -9887,6 +9887,10 @@ footer {
     .blog-details-area .details-item .details-head h2 {
         font-size: 21px;
     }
+
+    .blog-area-three .mb-0 .col-sm-6:last-child .blog-item-three {
+        margin-bottom: 0;
+    }
 }
 
 @media(max-width:768px) {
@@ -10027,6 +10031,23 @@ footer {
     .help-area iframe {
         height: 250px;
         margin-top: 15px;
+    }
+
+    .blog-details-area .details-item .details-head h2,.project-details-area .details-item .details-head h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .widget-area .widget-item h3 {
+        font-size: 18px;
+    }
+
+    .widget-area .project-details ul li p {
+        font-size: 17px;
+    }
+
+    .widget-area .project-details ul li {
+        padding: 10px;
     }
 }
 
